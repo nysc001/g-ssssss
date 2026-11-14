@@ -1,0 +1,312 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+h1{
+    margin: 5%;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 12px 7%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(83, 101, 141);
+}
+.menu{
+    display:flex;
+    gap: clamp(20px, 4vw, 50px);
+    align-items: center;
+    list-style: none;
+    
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+nav a:hover{
+    border-bottom: 5px solid black;
+}
+.hamburger{
+    display: none;
+}
+/* landing */
+#landing{
+    background-image: url(../images/featrues/Blue\ Couture\ Atelier\ in\ Sunlit\ Studio.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 650px;
+    color: rgb(57, 50, 50);
+    font-weight: bold;
+}
+.landing-text{
+    width: min(40%, 34rem);
+    padding-top: clamp(120px, 13vw, 180px);
+    padding-left: clamp(24px, 10vw, 150px);
+    padding-bottom: 48px;
+}
+.landing-text h2{
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: bold;
+}
+.landing-text p{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.landing-text a{
+    display: inline-block;
+    text-decoration:none;
+    background-color: rgb(54, 52, 52);  
+    color: white;
+    padding:  10px 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.landing-text a:hover{
+    background-color:black;
+    transform: scale(1.3);
+    transition: transform 1s, background-color 1s;
+}
+.space{
+    height: clamp(48px, 9vw, 120px);
+}
+#features{
+    width: min(100% - 48px, 1440px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(16px, 2.5vw, 36px);
+}
+.feature-container{
+    /* border: 1px solid black; */
+    box-shadow: 2px 3px 10px 3px rgb(54, 52, 52);
+    min-width: 0;
+    padding: 12px;
+    transition: transform 1s ease;
+}
+.feature-container:hover{
+    transform: translateY(-8px);
+}
+.feature-container img{
+    width:100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.feature-container h2{
+    text-align: center;
+    margin: 10px 0px 15px 0px;   
+}
+.feature-container p{
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+    line-height: 25px;
+}
+.feature-container a{
+    display: inline-block;
+    text-decoration:none;
+    background-color: rgb(54, 52, 52);  
+    color: white;
+    padding:  6px 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+
+}
+.feature-container a:hover{
+    background-color:black;
+    transform: scale(1.1);
+    transition: transform 1s, background-color 1s;
+}
+
+
+
+#landing-two{
+    background-image: url(../images/featrues/Modern\ Sewing\ Machine\ with\ Soft\ Shadows.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height:550px;
+    color: rgb(55, 54, 54);
+    font-weight: bold;
+}
+.landing-text-two{
+    width: min(40%, 34rem);
+    padding-top: clamp(120px, 13vw, 180px);
+    padding-left: clamp(24px, 10vw, 150px);
+    padding-bottom: 48px;
+}
+.landing-text-two h2{
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: bold;
+}
+.landing-text-two p{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.landing-text-two a{
+    display: inline-block;
+    text-decoration:none;
+    background-color: rgb(54, 52, 52);  
+    color: white;
+    padding:  10px 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    
+}
+.landing-text-two a:hover{
+    background-color:black;
+    transform: scale(1.3);
+    transition: transform 1s, background-color 1s;
+}
+
+
+/* contact */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(24px, 5vw, 72px);
+    padding: 4% 6% 5%;
+}
+.contact a{
+    text-decoration: none;
+}
+.contact-left{
+    width: 40%;
+    min-width: 0;
+}
+.contact-left p{
+    line-height: 27px;
+    max-width: 77%;
+    margin: 9px;
+}
+.contact-left a{
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: green;
+    display: inline-block;
+    padding: 9px;
+    border-radius: 10px;
+}
+.contact-left a:hover{
+    transform: scale(1.08);
+    transition: 1s;
+    background-color: rgb(24, 52, 39);
+}
+
+.contact-card{
+    background-color: rgb(214, 219, 217);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    width: 45%;
+    min-width: 0;
+    line-height: 40px;
+}
+.contact-card a{
+    overflow-wrap: anywhere;
+}
+.contact-row{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.233);
+}
+.contact-row strong {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+
+/* footer */
+
+footer{
+    background-color: rgb(35, 32, 32);
+    min-height: 140px;
+    color: antiquewhite;
+    padding: 24px 6%;
+    
+}
+.footer-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px 32px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    #features{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .landing-text{
+        width: min(60%, 34rem);
+    }
+    .landing-text-two{
+        width: min(48%, 24rem);
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-card{
+        width: 100%;
+    }
+
+    .contact-left p{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu{
+        display:none;
+    }
+    .hamburger{
+        display: block;
+    }
+    #features{
+        width: calc(100% - 32px);
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+
+
+    .contact{
+        padding: 32px 20px 40px;
+    }
+    .contact-card{
+        padding: 25px;
+        line-height: 2;
+    }
+
+    footer{
+        padding: 24px 20px;
+        text-align: center;
+    }
+
+}
